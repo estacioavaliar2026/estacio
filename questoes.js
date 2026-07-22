@@ -1001,6 +1001,28 @@ public class Exemplo {
         "Indireção(R)"
 
     ]
+},
+
+{
+    numero: 44,
+
+    texto: `Serve como alternativa à utilização de subclasses na atribuição de responsabilidade, provendo uma forma mais flexível e dinâmica, por meio da superposição     de objetos em que o objeto mais externo adiciona funcionalidades às operações do objeto mais interno. Assinale a alternativa com o nome do padrâo que possui esse     propósito:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Decorador(R)",
+
+        "Proxy.",
+
+        "Composite.",
+
+        "Facade",
+
+        "Bridge"
+
+    ]
 }
 
 ];
