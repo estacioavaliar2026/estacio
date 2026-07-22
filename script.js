@@ -291,7 +291,10 @@ pesquisa.addEventListener("keydown", function(e){
 
     if(e.key !== "Enter") return;
 
-    const termo = pesquisa.value.trim().toLowerCase();
+    const termo = pesquisa.value
+    .trim()
+    .toLowerCase()
+    .replace(/["'.,;:!?()]/g, "");
 
     if(termo === "") return;
 
@@ -299,25 +302,27 @@ pesquisa.addEventListener("keydown", function(e){
 
     for(const q of questoes){
 
-        // Procura na pergunta
-        if(q.texto.toLowerCase().includes(termo)){
+    const textoQuestao = q.texto
+        .toLowerCase()
+        .replace(/["'.,;:!?()]/g, "");
+
+    if(textoQuestao.includes(termo)){
+        encontrada = q;
+        break;
+    }
+
+    for(const alt of q.alternativas){
+
+        if(alt.toLowerCase().replace(/["'.,;:!?()]/g, "").includes(termo)){
             encontrada = q;
             break;
         }
 
-        // Procura nas alternativas
-        for(const alt of q.alternativas){
-
-            if(alt.toLowerCase().includes(termo)){
-                encontrada = q;
-                break;
-            }
-
-        }
-
-        if(encontrada) break;
-
     }
+
+    if(encontrada) break;
+
+}
 
     if(encontrada){
 
