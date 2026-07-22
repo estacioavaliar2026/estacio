@@ -852,7 +852,7 @@ public class Exemplo {
 {
     numero: 37,
 
-    texto: `"Este padrão substitui soluções condicionais baseadas em switch-case ou if-then-else por uma chamada genérica de operação para um objeto que pode     assumir diferentes formas em tempo de execução". Assinale a alternativa com o nome do padrão GRASP correspondente a esta descrição:`,
+    texto: `"Este padrão substitui soluções condicionais baseadas em switch-case ou if-then-else por uma chamada genérica de operação para um objeto que pode             assumir diferentes formas em tempo de execução". Assinale a alternativa com o nome do padrão GRASP correspondente a esta descrição:`,
 
     imagem: null,
 
@@ -867,6 +867,138 @@ public class Exemplo {
         "Especialista na Informação.",
 
         "Controlador."
+
+    ]
+},
+
+{
+    numero: 38,
+
+    texto: `Assinale a alternativa que descreve uma situação em que a utilização do padrão Especialista de Informação pode comprometer a coesão de um módulo.`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Quando definimos uma classe que fornece uma interface de alto nível para módulos clientes utilizarem para disparar operações do negócio.",
+
+        "Quando colocamos em uma mesma classe operações de naturezas diferentes como lógica do negócio e acesso a banco de dados, uma vez que eles utilizam as mesmas         informações da classe.(R)",
+
+        "Quando definimos um objeto intermediário para mediar a comunicação entre objetos remotos.",
+
+        "Quando introduzimos uma interface abstrata em substituição a um código centralizado em um módulo com estruturas condicionais do tipo switch-case ou if-then-        else.",
+
+        "Quando definimos a responsabilidade por criar um objeto para a classe que contém todas as informações necessárias para realizar essa criação."
+
+    ]
+},
+
+{
+    numero: 39,
+
+    texto: `Assinale a alternativa CORRETA sobre o padrão GRASP Coesão.`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Um módulo com coesão alta é aquele que concentra o código das funções mais importantes do sistema.",
+
+        "Um módulo com coesão baixa é aquele que depende de um pequeno conjunto de módulos.",
+
+        "Um módulo com coesão alta é aquele que concentra operações logicamente relacionadas envolvendo diferentes tecnologias ou sistemas externos.",
+
+        "Um módulo com coesão baixa é aquele que possui um propósito bem definido.",
+
+        "Um módulo com coesão alta reúne elementos que contribuem para que o módulo realize o seu propósito específico.(R)"
+
+    ]
+},
+
+{
+    numero: 40,
+
+    texto: `Assinale a alternativa CORRETA sobre o padrão GRASP Acoplamento:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "O acoplamento Global entre dois módulos corresponde a um grau baixo de acoplamento, já que eles não dependem um do outro, mas sim de uma variável global.",
+
+        "Quando passamos um objeto com diversos atributos como argumento para um método e este método utiliza apenas um desses atributos no seu processamento, temos um         acoplamento de dados.",
+
+        "Em um sistema de acoplamento baixo, as mudanças de requisitos tendem a gerar modificações em poucas classes.(R)",
+
+        "Um sistema com acoplamento baixo indica que a lógica do sistema está concentrada em poucos módulos, facilitando o seu entendimento.",
+
+        "Um sistema que não faz uso do recurso de interfaces abstratas, sendo implementado apenas com classes, tende a ser um sistema com grau de acoplamento baixo."
+
+    ]
+},
+
+{
+    numero: 41,
+
+    texto: `Assinale a alternativa com uma afirmativa correta sobre o padrão GRASP Variações Protegidas.`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "O padrão Variações Protegidas sugere proteger o sistema de variações concentrando a lógica dessas variações em um módulo controlador.",
+
+        "O padrão Variações Protegidas sugere identificar pontos do sistema propensos a variações e isolá-los em um módulo com coesão lógica.",
+
+        "O padrão Variações Protegidas sugere proteger o sistema de variações por meio de parâmetros definidos em uma classe com acesso global.",
+
+        "O padrão Variações Protegidas sugere proteger as variações de algoritmos sensíveis por meio do uso de recursos de criptografia.",
+
+        "O padrão Variações Protegidas sugere identificar pontos do sistema propensos a variações e isolá-los com a criação de interfaces no seu entorno.(R)"
+
+    ]
+},
+
+{
+    numero: 42,
+
+    texto: `O padrão GoF Mediator reduz uma rede de dependências entre objetos de uma topologia N x N para uma topologia 1 x N, introduzindo um objeto central que     recebe as notificações enviadas pelos objetos mediados e encaminha o processamento para os objetos responsáveis. Qual padrão GRASP está diretamente relacionado à     estratégia de introduzir um objeto para intermediar a interação entre outros objetos?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Indireção(R)",
+
+        "Polimorfismo",
+
+        "Especialista na Informação",
+
+        "Criador",
+
+        "Coesão Alta"
+
+    ]
+},
+
+{
+    numero: 43,
+
+    texto: `O padrão GoF Proxy consiste em colocarmos entre dois objetos remotos um elemento intermediário que capture a requisição do objeto cliente e a encaminhe     pela rede até o objeto destino. Dessa forma, o objeto cliente pode fazer chamadas de operações do objeto destino como se eles estivessem rodando localmente. Qual     padrão GRASP está mais diretamente relacionado à solução proposta pelo padrão GoF Proxy?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Especialista na Informação.",
+
+        "Criador.",
+
+        "Controlador.",
+
+        "Polimorfismo.",
+
+        "Indireção(R)"
 
     ]
 }
