@@ -425,6 +425,450 @@ public class Exemplo {
         "Model e Controller."
 
     ]
+},
+
+{
+    numero: 19,
+
+    texto: `Uma mudança essencial no modelo de programação Java, com a evolução do JEE, foi o uso de anotações nas diversas tarefas de configuração dos EJBs do     aplicativo. Para que serve a anotação Local no ambiente de criação de EJBs?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Definir um Stateless Session Bean..",
+
+        "Definir um contexto de persistência local para o Session Bean.",
+
+        "Definir a interface de acesso às entidades do JPA.",
+
+        "Definir um Stateful Session Bean.",
+
+        "Definir a interface de acesso local ao pool de EJBs.(R)"
+
+    ]
+},
+
+{
+    numero: 20,
+
+    texto: `Em uma aplicação corporativa Java EE seguindo a arquitetura MVC, as camadas são implementadas com tecnologias específicas: A camada Controller recebe     requisições HTTP do usuário, coordena chamadas à camada de negócio e seleciona a View a ser exibida. A camada Model encapsula a lógica de negócio e pode interagir     com a persistência de dados. No NetBeans, ao criar um projeto corporativo "Enterprise Application", qual combinação de tecnologias seria mais adequada para     implementar [Model, Controller] nesta aplicação?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "JPA e JSP",
+
+        "EJB e Servlet(R)",
+
+        "Servlet e EJB",
+
+        "JSP e EJB",
+
+        "EJB e JPA"
+
+    ]
+},
+
+{
+    numero: 21,
+
+    texto: `Em um projeto de software para gestão de bibliotecas, o padrão Singleton é utilizado para garantir uma única instância do sistema de gerenciamento de     usuários. Este padrão assegura que todas as operações de empréstimo e devolução de livros sejam gerenciadas de forma centralizada.
+    Qual é a principal característica do padrão Singleton utilizada neste contexto?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Permite a criação de múltiplas instâncias de uma classe.",
+
+        "Facilita a criação de objetos complexos em etapas.",
+
+        "Garante uma única instância de uma classe em toda a aplicação.(R)",
+
+        "Fornece uma interface para criar famílias de objetos relacionados.",
+
+        "Permite clonar objetos mantendo o mesmo estado."
+
+    ]
+},
+
+{
+    numero: 22,
+
+    texto: `Em um sistema de vendas online, o padrão Abstract Factory é utilizado para criar objetos relacionados a diferentes categorias de produtos sem especificar     suas classes concretas. Isso permite flexibilidade na adição de novas categorias de produtos. Qual é o propósito do padrão Abstract Factory neste contexto?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Garantir que apenas uma instância de uma classe seja criada.",
+
+        "Permitir a construção de um objeto em múltiplas etapas.",
+
+        "Criar uma família de objetos relacionados sem especificar suas classes concretas.(R)",
+
+        "Clonar objetos mantendo seu estado original.",
+
+        "Gerenciar o ciclo de vida de objetos complexos."
+
+    ]
+},
+
+{
+    numero: 23,
+
+    texto: `Os iteradores de coleção em Java obtidos a partir da interface Collection são implementados com a aplicação de qual padrão de projeto?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Abstract Factory",
+
+        "Factory Method(R)",
+
+        "Singleton",
+
+        "Prototype",
+
+        "Builder"
+
+    ]
+},
+
+{
+    numero: 24,
+
+    texto: `Analise a estratégia de solução a seguir: "Definir um construtor private e implementar uma operação estática que retorna uma instância criada em uma     operação com escopo static e armazenada como um atributo static dentro da própria classe". Assinale a alternativa com o nome do padrão que define essa     estratégia:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Abstract Factory",
+
+        "Factory Method",
+
+        "Singleton(R)",
+
+        "Prototype",
+
+        "Builder"
+
+    ]
+},
+
+{
+    numero: 25,
+
+    texto: `Reduzir a necessidade de criar hierarquias paralelas de classes ou de criar subclasses apenas para instanciar objetos específicos é um dos efeitos obtidos     com a aplicação de qual padrão?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Abstract Factory",
+
+        "Factory Method",
+
+        "Singleton",
+
+        "Prototype(R)",
+
+        "Builder"
+
+    ]
+
+},
+
+{
+    numero: 26,
+
+    texto: `Você deseja criar um objeto complexo formado por diferentes partes. Para isso, você define uma interface abstrata responsável com operações representando a     criação dessas partes, permitindo que as implementações concretas dessa interface criem diferentes representações dessas partes. Qual padrão de projeto você         utilizaria nessa situação?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Abstract Factory",
+
+        "Factory Method",
+
+        "Singleton",
+
+        "Prototype",
+
+        "Builder(R)"
+
+    ]
+},
+
+{
+    numero: 27,
+
+    texto: `Sobre o padrão Abstract Factory, assinale a alternativa correta:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Sua implementação requer a definição de uma operação chamada clone em cada fábrica concreta.",
+
+        "Sua implementação pode envolver a aplicação do padrão Factory Method.(R)",
+
+        "Seu propósito é abstrair o processo de construção de um objeto complexo formado por vários passos.",
+
+        "Uma fábrica pode criar apenas um tipo de produto.",
+
+        "O construtor de cada fábrica deve ser definido como private."
+
+    ]
+},
+
+{
+    numero: 28,
+
+    texto: `Analise a estratégia de solução a seguir: "Definir uma hierarquia de classes responsáveis pela instanciação de uma hierarquia paralela de classes produtos,     em que cada classe concreta é capaz de instanciar um produto específico de cada tipo definido em uma família de produtos". Assinale a alternativa com o nome do     padrão que define essa estratégia:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Abstract Factory(R)",
+
+        "Factory Method",
+
+        "Singleton",
+
+        "Prototype",
+
+        "Builder"
+
+    ]
+},
+
+{
+    numero: 29,
+
+    texto: `Um módulo X escreve dados em uma tabela de um banco de dados relacional que é lida por um módulo Y. Se o desenvolvedor responsável pelo módulo X resolver     mudar algo no esquema dessa tabela, será preciso avaliar o impacto dessa mudança em Y. Esse fato evidencia a existência de um acoplamento de que natureza entre os     módulos X e Y?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Acoplamento Global",
+
+        "Acoplamento de Estrutura",
+
+        "Acoplamento de Dados",
+
+        "Acoplamento Externo(R)",
+
+        "Acoplamento de Controle"
+
+    ]
+},
+
+{
+    numero: 30,
+
+    texto: `Ao invés de colocarmos o cálculo do frete de um pedido na classe Pedido, optamos por criar uma hierarquia de classes para encapsular os diferentes     algoritmos de cálculo de frete que temos no sistema". Assinale a alternativa com o nome do padrão GRASP que recomenda a criação de classes que não representam     diretamente elementos concretos encontrados no domínio no negócio, seguindo uma decomposição de responsabilidades por comportamento e não por representação, como a     descrita no cálculo do frete.`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Invenção Pura.(R)",
+
+        "Especialista na Informação.",
+
+        "Polimorfismo.",
+
+        "Acoplamento Baixo.",
+
+        "Indireção."
+
+    ]
+},
+
+{
+    numero: 31,
+
+    texto: `Veja o código a seguir e assinale a alternativa com o tipo de acoplamento existente entre a classe Exemplo e a classe Lampada.
+
+public class Lampada {
+    public static final int LIGAR = 1;
+    public static final int DESLIGAR = 0;
+
+    public realizarOperacao(int codigo) {
+        switch(codigo) {
+            case LIGAR:
+                // executa procedimento para ligar a lâmpada
+                break;
+            case DESLIGAR:
+                // executa procedimento para ligar a lâmpada
+                break;
+        }
+    }
+}
+
+public class Exemplo {
+    public static void main(String [] args) {
+        Lampada lampada = new Lampada();
+        Lampada.realizarOperacao(Lampada.LIGAR);
+    }
+}
+}`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Acoplamento Global.",
+
+        "Acoplamento de Estrutura.",
+
+        "Acoplamento Funcional.",
+
+        "Acoplamento Externo.",
+
+        "Acoplamento de Controle.(R)"
+
+    ]
+},
+
+{
+    numero: 32,
+
+    texto: `Um módulo A contém operações como conversão de medidas, formatação de valores monetários, remoção de espaços duplicados em strings e envio/recepção de     arquivos FTP. O módulo A possui coesão:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Funcional.",
+
+        "Procedural.",
+
+        "Coincidente.(R)",
+
+        "Temporal.",
+
+        "Sequencial."
+
+    ]
+},
+
+{
+    numero: 33,
+
+    texto: `Uma classe X contém o seguinte conjunto de métodos: Fechar arquivos Fechar conexão com banco de dados Finalizar tarefas em execução em segundo plano     Liberar buffers de armazenamento temporário Finalizar operação, que é um método executado na finalização do sistema e que chama todos os métodos anteriores.     Assinale a alternativa com o tipo de coesão da classe X.`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Coesão Coincidente",
+
+        "Coesão Temporal(R)",
+
+        "Coesão Lógica",
+
+        "Coesão Funcional",
+
+        "Coesão Sequencial"
+
+    ]
+},
+
+{
+    numero: 34,
+
+    texto: `Uma classe X acessa diretamente os atributos públicos de uma classe Y. Que tipo de acoplamento existe entre X e Y?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Acoplamento Global",
+
+        "Acoplamento de Conteúdo(R)",
+
+        "Acoplamento Externo",
+
+        "Acoplamento de Estrutura",
+
+        "Acoplamento de Dados"
+
+    ]
+},
+
+{
+    numero: 35,
+
+    texto: `Assinale a alternativa que contém tipos de coesão de um módulo em ordem do tipo de coesão mais baixa para a mais alta:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Temporal - Lógica - Procedural",
+
+        "Lógica - Coincidente - Sequencial",
+
+        "Procedural - Sequencial - Comunicação",
+
+        "Coincidente - Temporal - Sequencial(R)",
+
+        "Procedural - Lógica - Funcional"
+
+    ]
+},
+
+{
+    numero: 36,
+
+    texto: `Assinale a alternativa que apresenta os níveis de acoplamento entre módulos ordenados do mais baixo para o mais alto:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Dados - Estrutura - Externo - Controle - Conteúdo - Global",
+
+        "Dados - Controle - Estrutura - Externo - Conteúdo - Global",
+
+        "Estrutura - Dados - Controle - Conteúdo - Global - Externo",
+
+        "Dados - Estrutura - Controle - Externo - Global - Conteúdo(R)",
+
+        "Estrutura - Dados - Controle - Global - Externo - Conteúdo"
+
+    ]
+},
+
+{
+    numero: 37,
+
+    texto: `"Este padrão substitui soluções condicionais baseadas em switch-case ou if-then-else por uma chamada genérica de operação para um objeto que pode     assumir diferentes formas em tempo de execução". Assinale a alternativa com o nome do padrão GRASP correspondente a esta descrição:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Acoplamento Baixo.",
+
+        "Polimorfismo.(R)",
+
+        "Indireção.",
+
+        "Especialista na Informação.",
+
+        "Controlador."
+
+    ]
 }
 
 ];
