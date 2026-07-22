@@ -882,11 +882,11 @@ public class Exemplo {
 
         "Quando definimos uma classe que fornece uma interface de alto nível para módulos clientes utilizarem para disparar operações do negócio.",
 
-        "Quando colocamos em uma mesma classe operações de naturezas diferentes como lógica do negócio e acesso a banco de dados, uma vez que eles utilizam as mesmas         informações da classe.(R)",
+        "Quando colocamos em uma mesma classe operações de naturezas diferentes como lógica do negócio e acesso a banco de dados, uma vez que eles utilizam as mesmas           informações da classe.(R)",
 
         "Quando definimos um objeto intermediário para mediar a comunicação entre objetos remotos.",
 
-        "Quando introduzimos uma interface abstrata em substituição a um código centralizado em um módulo com estruturas condicionais do tipo switch-case ou if-then-        else.",
+        "Quando introduzimos uma interface abstrata em substituição a um código centralizado em um módulo com estruturas condicionais do tipo switch-case ou if-then-           else.",
 
         "Quando definimos a responsabilidade por criar um objeto para a classe que contém todas as informações necessárias para realizar essa criação."
 
