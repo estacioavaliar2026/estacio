@@ -87,6 +87,19 @@ header{
 
 }
 
+.icones{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.iconeTopo{
+    width:35px;
+    height:35px;
+    object-fit:contain;
+    cursor:pointer;
+}
+
 .cabecalhoDireito{
 
     display:flex;
