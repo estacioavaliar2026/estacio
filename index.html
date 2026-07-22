@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sala de Aula | Estacio</title>
+  
+    <link rel="icon" type="image/png" href="icones/estacio.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="cabecalhoEsquerdo">
+
+        <div class="logo">
+
+            AV
+
+        </div>
+
+        <div class="titulo">
+
+            Padrão de Projeto de Software Com Java
+
+        </div>
+
+    </div>
+
+    <div class="cabecalhoDireito">
+
+        <input
+            type="text"
+            id="pesquisa">
+
+        <div class="icones">
+
+            <img src="assets/icones/texto.svg">
+
+            <img src="assets/icones/contraste.svg">
+
+            <img src="assets/icones/tema.svg">
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="layout">
+
+    <main id="conteudo">
+
+    </main>
+
+    <aside>
+
+        <div class="cronometro">
+
+            <div id="tempo">
+
+                00 : 50 : 00
+
+            </div>
+
+        </div>
+
+        <div class="questaoAtual">
+
+            Questão
+
+            <strong id="numeroAtual">
+
+                1 de 10
+
+            </strong>
+
+        </div>
+
+        <div id="gradeQuestoes">
+
+        </div>
+
+        <div class="estatisticas">
+
+            <div>
+
+                Respondidas
+
+                <strong id="respondidas">
+
+                    0
+
+                </strong>
+
+            </div>
+
+            <div>
+
+                Em branco
+
+                <strong id="embranco">
+
+                    10
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        <button id="finalizar">
+
+            FINALIZAR PROVA
+
+        </button>
+
+    </aside>
+
+</div>
+
+<script src="questoes.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

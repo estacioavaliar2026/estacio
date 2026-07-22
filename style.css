@@ -1,0 +1,596 @@
+/* ===================================================
+   RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+
+    width:100%;
+    height:100%;
+
+    font-family:Roboto,Arial,sans-serif;
+
+    background:#F5F6FA;
+
+    overflow:hidden;
+
+}
+
+/* ===================================================
+   CABEÇALHO
+=================================================== */
+
+header{
+
+    height:64px;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #E7E7E7;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 22px;
+
+}
+
+.cabecalhoEsquerdo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.logo{
+
+    font-size:26px;
+
+    font-weight:500;
+
+    color:#222;
+
+    user-select:none;
+
+    position:relative;
+
+    left:25px;
+
+    top:0px;
+
+}
+
+.titulo{
+
+    font-size:16px;
+
+    color:#222;
+
+    font-weight:400;
+
+    position:relative;
+
+    left:50px;
+
+    top:0px;
+
+}
+
+.cabecalhoDireito{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* ===================================================
+   PESQUISA
+=================================================== */
+
+#pesquisa{
+
+    width:390px;
+
+    height:40px;
+
+    border:1px solid #D8D8D8;
+
+    border-radius:8px;
+
+    outline:none;
+
+    padding:0 14px;
+
+    font-size:14px;
+    
+    position:relative;
+
+    left:0px;
+
+    top:0px;
+
+    background:white;
+
+}
+
+#pesquisa:focus{
+
+    border-color:#2F80ED;
+
+}
+
+/* remove o texto interno */
+
+#pesquisa::placeholder{
+
+    color:transparent;
+
+}
+
+/* ===================================================
+   ÍCONES
+=================================================== */
+
+.icones{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:center;
+
+    position:relative;
+
+    left:0px;
+
+    top:0px;
+
+}
+
+.icones img{
+
+    width:21px;
+
+    height:21px;
+
+    cursor:pointer;
+
+    opacity:.85;
+
+    transition:.2s;
+
+}
+
+.icones img:hover{
+
+    opacity:1;
+
+}
+
+/* ===================================================
+   LAYOUT
+=================================================== */
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 310px;
+
+    height:calc(100vh - 64px);
+
+}
+
+/* ===================================================
+   CONTEÚDO
+=================================================== */
+
+main{
+
+    overflow-y:auto;
+
+    padding:28px;
+
+}
+
+/* esconder barra */
+
+main::-webkit-scrollbar{
+
+    width:0px;
+
+}
+
+main{
+
+    scrollbar-width:none;
+
+}
+
+/* ===================================================
+   PAINEL
+=================================================== */
+
+aside{
+
+    background:white;
+
+    border-left:1px solid #E7E7E7;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:22px;
+
+}
+
+/* ===================================================
+   CRONÔMETRO
+=================================================== */
+
+.cronometro{
+
+    text-align:center;
+
+    padding-bottom:22px;
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+#tempo{
+
+    font-size:28px;
+
+    font-weight:500;
+
+    color:#000;
+
+}
+
+/* ===================================================
+   QUESTÃO ATUAL
+=================================================== */
+
+.questaoAtual{
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#444;
+
+}
+
+.questaoAtual strong{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#1565C0;
+
+    font-size:16px;
+
+}
+
+/* ===================================================
+   GRADE DAS QUESTÕES (PAINEL DIREITO)
+=================================================== */
+
+#gradeQuestoes{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+    margin-top:22px;
+
+}
+
+#gradeQuestoes button{
+
+    width:42px;
+
+    height:42px;
+
+    background:#FFF;
+
+    border:1px solid #D9D9D9;
+
+    border-radius:7px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.2s;
+
+}
+
+#gradeQuestoes button:hover{
+
+    border-color:#1976D2;
+
+}
+
+#gradeQuestoes button.respondida{
+
+    background:#1976D2;
+
+    color:white;
+
+    border-color:#1976D2;
+
+}
+
+#gradeQuestoes button.atual{
+
+    outline:2px solid #1976D2;
+
+}
+
+/* ===================================================
+   ESTATÍSTICAS
+=================================================== */
+
+.estatisticas{
+
+    margin-top:30px;
+
+    border-top:1px solid #ECECEC;
+
+    padding-top:18px;
+
+}
+
+.estatisticas div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:14px;
+
+    font-size:14px;
+
+}
+
+.estatisticas strong{
+
+    color:#1565C0;
+
+}
+
+/* ===================================================
+   BOTÃO FINALIZAR
+=================================================== */
+
+#finalizar{
+
+    margin-top:auto;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#1976D2;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+#finalizar:hover{
+
+    background:#125EAF;
+
+}
+
+/* ===================================================
+   QUESTÕES
+=================================================== */
+
+.questao{
+
+    background:#FFF;
+
+    border-radius:10px;
+
+    padding:28px;
+
+    margin-bottom:22px;
+
+    box-shadow:0 1px 5px rgba(0,0,0,.08);
+
+    border:1px solid #ECECEC;
+
+}
+
+.numeroQuestao{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:#EFEFEF;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:13px;
+
+    margin-bottom:16px;
+
+}
+
+.questao h2{
+
+    font-size:18px;
+
+    font-weight:500;
+
+    margin-bottom:18px;
+
+}
+
+.questao p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-bottom:22px;
+
+    color:#444;
+
+}
+
+/* ===================================================
+   IMAGEM DA QUESTÃO
+=================================================== */
+
+.imagemQuestao{
+
+    width:100%;
+
+    margin:20px 0;
+
+    border-radius:6px;
+
+    border:1px solid #DDD;
+
+}
+
+/* ===================================================
+   ALTERNATIVAS
+=================================================== */
+
+.alternativa{
+
+    border:1px solid #DDDDDD;
+
+    border-radius:8px;
+
+    padding:14px 16px;
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+}
+
+.alternativa:hover{
+
+    border-color:#1976D2;
+
+}
+
+.alternativa.marcada{
+
+    background:#1976D2;
+
+    color:white;
+
+    border-color:#1976D2;
+
+}
+
+.letra{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    border:1px solid currentColor;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:13px;
+
+}
+
+.textoAlternativa{
+
+    flex:1;
+
+}
+
+/* ===================================================
+   ANIMAÇÕES
+=================================================== */
+
+.questao{
+
+    animation:aparecer .25s;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
