@@ -3,26 +3,21 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sala de Aula | Estacio</title>
-  
-    <link rel="icon" type="image/png" href="icones/estacio.png">
+<title>Sala de Aula | Estácio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="icones/estacio.png">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-          rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -33,15 +28,11 @@
     <div class="cabecalhoEsquerdo">
 
         <div class="logo">
-
             AV
-
         </div>
 
         <div class="titulo">
-
             Padrão de Projeto de Software Com Java
-
         </div>
 
     </div>
@@ -50,15 +41,22 @@
 
         <input
             type="text"
-            id="pesquisa">
+            id="pesquisa"
+            placeholder="Pesquisar">
 
         <div class="icones">
 
-            <img src="icones/icone.t.png" class="iconeTopo" alt="T">
+            <img src="icones/icone.t.png"
+                 class="iconeTopo"
+                 alt="Texto">
 
-            <img src="icones/icone.circulo1.png" class="iconeTopo" alt="icone.circulo1">
+            <img src="icones/icone.circulo1.png"
+                 class="iconeTopo"
+                 alt="Contraste">
 
-            <img src="icones/icone.circulo2.png" class="iconeTopo" alt="icone.circulo2">
+            <img src="icones/icone.circulo2.png"
+                 class="iconeTopo"
+                 alt="Tema">
 
         </div>
 
@@ -68,73 +66,88 @@
 
 <div class="layout">
 
-    <main id="conteudo">
+<main id="conteudo">
 
-    </main>
+</main>
 
-    <aside>
+<aside>
 
-        <div class="cronometro">
+<div class="cronometro">
 
-            <div id="tempo">
+    <div class="topoCronometro">
 
-                00 : 50 : 00
+        <div></div>
 
-            </div>
+        <div class="ocultar">
 
-        </div>
+    <img src="icones/icones.ocultar.png"
+         alt="Ocultar">
 
-        <div class="questaoAtual">
+</div>
 
-            Questão
+    </div>
 
-            <strong id="numeroAtual">
+    <div id="tempo">
 
-                1 de 10
+        00 : 50 : 00
 
-            </strong>
+    </div>
 
-        </div>
+    <div class="legendaTempo">
 
-        <div id="gradeQuestoes">
+        <span id="horaLabel">hora</span>
 
-        </div>
+        <span id="minutoLabel">min</span>
 
-        <div class="estatisticas">
+        <span id="segundoLabel">seg</span>
 
-            <div>
+    </div>
 
-                Respondidas
+    <div class="barraTempo">
 
-                <strong id="respondidas">
+        <div id="progressoTempo"></div>
 
-                    0
+    </div>
 
-                </strong>
+</div>
 
-            </div>
+<div class="questaoAtual">
 
-            <div>
+    Questão
 
-                Em branco
+    <strong id="numeroAtual">
 
-                <strong id="embranco">
+        1 de 10
 
-                    10
+    </strong>
 
-                </strong>
+</div>
 
-            </div>
+<div id="gradeQuestoes">
 
-        </div>
+</div>
 
-        <button id="finalizar">
+<div class="estatisticas">
 
-            FINALIZAR PROVA
+    <div class="itemEstatistica">
+        <span class="bolinha" id="bolinhaRespondidas"></span>
+        <span>Respondidas (<strong id="respondidas">0</strong>)</span>
+    </div>
 
-        </button>
+    <div class="itemEstatistica">
+        <span class="bolinha" id="bolinhaBranco"></span>
+        <span>Em branco (<strong id="embranco">10</strong>)</span>
+    </div>
 
-    </aside>
+</div>
+
+<button id="finalizar">
+
+    FINALIZAR PROVA
+
+</button>
+
+</aside>
 
 </div>
 
