@@ -120,7 +120,13 @@ header{
 
     height:40px;
 
-    border:1px solid #D8D8D8;
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    box-shadow:none;
 
     border-radius:8px;
 
@@ -152,6 +158,24 @@ header{
 
     color:transparent;
 
+}
+
+#horaLabel{
+    position:relative;
+    left:-3px;
+    top:0px;
+}
+
+#minutoLabel{
+    position:relative;
+    left:-43px;
+    top:0px;
+}
+
+#segundoLabel{
+    position:relative;
+    left:-80px;
+    top:0px;
 }
 
 /* ===================================================
@@ -256,24 +280,124 @@ aside{
    CRONÔMETRO
 =================================================== */
 
+.topoCronometro{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+}
+
+.tituloTempo{
+
+    font-size:14px;
+
+    color:#555;
+
+    font-weight:500;
+
+}
+
+.ocultar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    cursor:pointer;
+
+    color:#1976D2;
+
+    font-size:13px;
+
+    position:relative;
+
+    left:-20px;      /* esquerda/direita */
+
+    top:42px;       /* cima/baixo */
+
+}
+
+}
+
+.ocultar img{
+
+    width:16px;
+
+    height:16px;
+
+}
+
+.legendaTempo{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    gap:58px;
+
+    margin-top:6px;
+
+    padding-left:6px;
+
+    font-size:12px;
+
+    color:#777;
+
+}
+
+.barraTempo{
+
+    width:100%;
+
+    height:8px;
+
+    background:#E6E6E6;
+
+    border-radius:20px;
+
+    margin-top:18px;
+
+    overflow:hidden;
+
+}
+
 .cronometro{
-
     text-align:center;
-
-    padding-bottom:22px;
-
+    padding:12px 0 20px;
     border-bottom:1px solid #ECECEC;
+}
+
+.legendasTempo{
+    display:flex;
+    justify-content:space-around;
+    margin-top:8px;
+    font-size:13px;
+    color:#666;
+}
+
+#progressoTempo{
+
+    width:100%;
+
+    height:100%;
+
+    background:#D3D3D3;
 
 }
 
 #tempo{
-
-    font-size:28px;
-
-    font-weight:500;
-
+    font-size:22px;
+    font-weight:600;
     color:#000;
-
+    text-align:left;
+    margin-top:10px;
 }
 
 /* ===================================================
@@ -284,22 +408,34 @@ aside{
 
     margin-top:20px;
 
-    font-size:14px;
-
-    color:#444;
+    font-size:16px;      /* aumenta "Questão" */
+    color:#000;          /* preto */
+    font-weight:400;     /* normal */
 
 }
 
 .questaoAtual strong{
 
-    display:block;
+    display:inline;
 
-    margin-top:4px;
+    margin-left:6px;
 
-    color:#1565C0;
+    font-size:16px;      /* mesmo tamanho */
+    color:#000;          /* mesma cor */
+    font-weight:400;     /* sem negrito */
 
-    font-size:16px;
+}
 
+.textoQuestao{
+    font-size:15px;
+    font-weight:400;
+    line-height:1.6;
+}
+
+.textoAlternativa{
+    font-size:15px;
+    font-weight:400;
+    line-height:1.5;
 }
 
 /* ===================================================
@@ -328,7 +464,7 @@ aside{
 
     border:1px solid #D9D9D9;
 
-    border-radius:7px;
+    border-radius:8px;
 
     cursor:pointer;
 
@@ -346,11 +482,11 @@ aside{
 
 #gradeQuestoes button.respondida{
 
-    background:#1976D2;
+    background:#EAF2FF;
 
-    color:white;
+    color:#000;
 
-    border-color:#1976D2;
+    border:-2px solid #2A5CCB;
 
 }
 
@@ -365,30 +501,66 @@ aside{
 =================================================== */
 
 .estatisticas{
-
-    margin-top:30px;
-
-    border-top:1px solid #ECECEC;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    left:0px;
+    top:-31px;
+    margin-top:28px;
     padding-top:18px;
+    border-top:1px solid #ECECEC;
+    font-size:15px;
+}
+
+.itemEstatistica strong{
+    font-size:14px;
+    color:#1976D2;
+}
+
+.bolinha{
+
+    width:10px;
+
+    height:10px;
+
+    min-width:10px;
+
+    border-radius:50%;
+
+    background:#d4d4d4;
 
 }
 
-.estatisticas div{
+.bolinha.ativa{
+    background:#1976D2;
+}
+
+.azul{
+
+    background:#1976D2;
+
+}
+
+.cinza{
+
+    background:#D0D0D0;
+
+}
+
+.itemEstatistica{
 
     display:flex;
 
-    justify-content:space-between;
+    align-items:center;
 
-    margin-bottom:14px;
-
-    font-size:14px;
+    gap:6px;
 
 }
 
 .estatisticas strong{
 
-    color:#1565C0;
+    color:#000;
 
 }
 
@@ -398,15 +570,23 @@ aside{
 
 #finalizar{
 
-    margin-top:auto;
+    margin-top:28px;
+
+    width:100%;
 
     height:46px;
+    
+    position:relative;
+
+    left:0px;
+
+    top:-20px;
 
     border:none;
 
     border-radius:8px;
 
-    background:#1976D2;
+    background:#1D46B8;
 
     color:white;
 
@@ -415,8 +595,6 @@ aside{
     font-weight:500;
 
     cursor:pointer;
-
-    transition:.2s;
 
 }
 
@@ -542,34 +720,45 @@ aside{
 
 .alternativa.marcada{
 
-    background:#1976D2;
+    background:#EAF2FF;
 
-    color:white;
+    color:#222;
 
-    border-color:#1976D2;
+    border-color:#1F5CC4;
+
+}
+
+.alternativa.marcada .letra{
+
+    background:#1F5CC4;
+    color:#FFF;
+    border-color:#1F5CC4;
 
 }
 
 .letra{
 
-    width:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    height:28px;
+    width:32px;
+    height:32px;
 
     border-radius:50%;
 
-    border:1px solid currentColor;
+    background:#F5F5F5;
+    border:1px solid #D8D8D8;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-weight:bold;
-
+    color:#333;
     font-size:13px;
+    font-weight:400;
 
+    flex-shrink:0;
+
+    font-family:'Roboto', sans-serif;
+    font-size:15px;
+    font-weight:400;
 }
 
 .textoAlternativa{
