@@ -1012,7 +1012,7 @@ public class Exemplo {
 
     alternativas: [
 
-        "Decorador(R)",
+        "Decorator(R)",
 
         "Proxy.",
 
@@ -1021,6 +1021,72 @@ public class Exemplo {
         "Facade",
 
         "Bridge"
+
+    ]
+},
+
+{
+    numero: 45,
+
+    texto: `Fornecer aos clientes um objeto intermediário com uma réplica da interface do objeto fornecedor que contém os métodos que realmente serão executados. Esse      objeto intermediário delega as requisições dos clientes para o fornecedor, como ocorre, por exemplo, quando clientes e fornecedores são objetos distribuídos em         máquinas diferentes. Assinale a alternativa com o nome do padrão com esse propósito:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Bridge",
+
+        "Decorator(R).",
+
+        "Flyweight.",
+
+        "Adapter",
+
+        "Composite"
+
+    ]
+},
+
+{
+    numero: 46,
+
+    texto: `Um amigo seu está desenvolvendo um sistema com dezenas de casos de uso. Esse sistema pode ser usado em uma interface web e em um aplicativo móvel. Você o     aconselha a criar uma classe para cada caso de uso que ficará responsável por receber os eventos lógicos recebidos dessas interfaces e coordenar a produção das     respostas que o sistema deve produzir para esses eventos. Assinale a alternativa com o nome do padrão GRASP descrito na recomendação descrita:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Indireção",
+
+        "Criador.",
+
+        "Mediador.",
+
+        "Controlador(R)",
+
+        "Polimorfismo."
+
+    ]
+},
+
+{
+    numero: 47,
+
+    texto: `As mensagerias são um ferramental de ampla utilização em ambientes corporativos, e entre os diferentes tipos de EJBs, os MDBs são os componentes     responsáveis pelo comportamento assíncrono do sistema, baseado na utilização de mensagerias. Assinale a alternativa correta com relação aos Message Driven Benas,     ou MDBs:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Precisam implementar a interface SessionListener.",
+
+        "Tratam as mensagens através de seu único método, denominado onMessage.(R)",
+
+        "Necessitam de interfaces @Local e @Remote.",
+
+        "Eles podem guardar informações de estado.",
+
+        "São definidos pela anotação @Message."
 
     ]
 }
