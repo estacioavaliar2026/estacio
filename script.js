@@ -244,6 +244,25 @@ function atualizarPainel() {
 
     embranco.textContent = 10 - Math.min(totalRespondidas, 10);
 
+    const bolinhaRespondidas =
+document.getElementById("bolinhaRespondidas");
+
+const bolinhaBranco =
+document.getElementById("bolinhaBranco");
+
+if(totalRespondidas > 0){
+    bolinhaRespondidas.classList.add("ativa");
+}else{
+    bolinhaRespondidas.classList.remove("ativa");
+}
+
+
+if((10-totalRespondidas) > 0){
+    bolinhaBranco.classList.add("ativa");
+}else{
+    bolinhaBranco.classList.remove("ativa");
+}
+
 }
 
 /* ======================================================
