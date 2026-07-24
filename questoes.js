@@ -1089,6 +1089,28 @@ public class Exemplo {
         "São definidos pela anotação @Message."
 
     ]
+},
+
+{
+    numero: 48,
+
+    texto: `Os EJBs do tipo Session Bean podem ser divididos em três perfis, sendo que um deles permite a ocorrência de apenas uma instância por máquina virtual,     viabilizando o compartilhamento de dados de forma global, entre todos os aplicativos do servidor. Qual é o perfil do EJB descrito?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Stateful.",
+
+        "Entity",
+
+        "Singleton(R)",
+
+        "Stateless",
+
+        "Message Driven Bean"
+
+    ]
 }
 
 ];
