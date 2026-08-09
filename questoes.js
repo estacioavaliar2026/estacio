@@ -1111,6 +1111,93 @@ public class Exemplo {
         "Message Driven Bean"
 
     ]
-}
+},
 
+{
+    numero: 49,
+
+    texto: `Analise o propósito a seguir:''Permitir que um único processo de construção possa ser utilizado para construir diferentes representações de um objeto     complexo ao implementar a representação do objeto e o processo da sua construção em classes separadas''. Assinale a alternativa com o nome do padrão que possui     esse propósito:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Factory Method",
+
+        "Abstract Factory",
+
+        "Singleton",
+
+        "Builder(R)",
+
+        "Prototype"
+
+    ]
+},
+
+{
+    numero: 50,
+
+    texto: `Seja uma expressão matemática representada por uma árvore semântica abstrata, a partir da qual você pode implementar diversas operações como, por exemplo,     o cálculo do valor da expressão, a verificação sintática e semântica dessa expressão ou a geração da expressão em notação polonesa. Cada nó da árvore corresponde a     um elemento da expressão: número, variável, operadores (soma, subtração, multiplicação, divisão), entre outros. Em vez de definir em cada nó várias operações     ligadas às diversas finalidades, esse padrão sugere que o processamento dos nós para cada finalidade (cálculo do valor, verificação sintática etc.) seja     concentrado em uma classe que implementa um método para cada tipo de nó (ex.: número, variável, operadores etc.), sendo que esses métodos recebem como parâmetro o     objeto correspondente ao nó a ser processado. Assinale a alternativa com o nome do padrão que possui as características descritas no enunciado:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Observer",
+
+        "Template Method",
+
+        "Visitor(R)",
+
+        "Mediator",
+
+        "State"
+
+    ]
+},
+
+{
+    numero: 51,
+
+    texto: `Assinale a alternativa com a afirmação CORRETA sobre o padrão Controlador.`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Em uma aplicação Java web, o módulo controlador pode ser implementado como um servlet.",
+
+        "O módulo Controlador centraliza a interação do usuário com o sistema, capturando os eventos externos e controlando o fluxo de navegação das telas e janelas         do sistema.",
+
+        "O padrão Controlador proposto pelo GRASP equivale ao padrão GoF Strategy",
+
+        "O módulo Controlador centraliza o código relacionado à lógica de negócio do sistema ou de um caso de uso.",
+
+        "O módulo Controlador coordena e controla os módulos responsáveis pela produção da resposta a eventos lógicos de sistema gerados pela camada de interface com         o usuário.(R)"
+
+    ]
+},
+
+{
+    numero: 52,
+
+    texto: `A arquitetura oferecida pelo JPA modificou a forma do Java lidar com os dados, e o conhecimento acerca de suas características é fundamental para todo     programador que utilize a plataforma. Assinale a alternativa INCORRETA acerca do JPA:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Trabalha com código anotado Java",
+
+        "Precisa de um arquivo de configuração denominado persistence.xml",
+
+        "Permite mapear os relacionamentos da base de dados",
+
+        "Com a adoção do JPA eliminamos a necessidade do JDBC(R)",
+
+        "É o mecanismo padrão de ORM do Java"
+
+    ]
+}
 ];
