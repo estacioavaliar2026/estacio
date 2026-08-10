@@ -1116,7 +1116,7 @@ public class Exemplo {
 {
     numero: 49,
 
-    texto: `Analise o propósito a seguir:''Permitir que um único processo de construção possa ser utilizado para construir diferentes representações de um objeto     complexo ao implementar a representação do objeto e o processo da sua construção em classes separadas''. Assinale a alternativa com o nome do padrão que possui     esse propósito:`,
+    texto: `Analise o propósito a seguir: ''Permitir que um único processo de construção possa ser utilizado para construir diferentes representações de um objeto     complexo ao implementar a representação do objeto e o processo da sua construção em classes separadas''. Assinale a alternativa com o nome do padrão que possui     esse propósito:`,
 
     imagem: null,
 
@@ -1199,5 +1199,50 @@ public class Exemplo {
         "É o mecanismo padrão de ORM do Java"
 
     ]
+},
+
+{
+    numero: 53,
+
+    texto: `Você está desenvolvendo um sistema que precisa se integrar com diferentes sistemas de despacho de produtos fornecidos por terceiros. Seu objetivo é     isolar os módulos clientes das implementações específicas fornecidas pelos terceiros. Para isso, você define uma interface genérica do serviço de despacho que     abstrai essas diferentes implementações, e cria pequenos módulos que traduzem essa interface genérica nas chamadas específicas requeridas pela interface de cada     sistema disponibilizado pelos terceiros. Assinale a alternativa com o nome do padrão que corresponde a essa estratégia de solução:`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Brigde",
+
+        "Adapter(R)",
+
+        "Facade",
+
+        "Proxy",
+
+        "Composite"
+
+    ]
+},
+
+{
+    numero: 54,
+
+    texto: `O ferramental do JPA oferece diversos componentes, com finalidades específicas, no âmbito da persistência de dados, oferecendo um caminho comum para o     mapeamento objeto-relacional. Qual componente, oferecido pelo JPA, é responsável pelo manuseio das diversas entidades?`,
+
+    imagem: null,
+
+    alternativas: [
+
+        "Transaction",
+
+        "EntityManagerFactory",
+
+        "Entity",
+
+        "Column",
+
+        "EntityManager(R)"
+
+    ]
 }
+
 ];
